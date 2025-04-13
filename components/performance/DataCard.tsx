@@ -10,6 +10,13 @@ import {
 } from "recharts";
 import { Card } from "@/components/ui/card";
 
+type DataCardProps = {
+  value: number;
+  label: string;
+  shouldFormat?: boolean;
+};
+
+
 const data = [
   { name: "Jan", total: 400 },
   { name: "Feb", total: 700 },
@@ -18,7 +25,7 @@ const data = [
   { name: "May", total: 1200 },
 ];
 
-const Chart = () => {
+const DataCard = ({ value, label, shouldFormat }: DataCardProps) => {
   return (
     <Card className="p-4">
       <h2 className="text-lg font-semibold mb-4">Monthly Revenue</h2>
@@ -38,4 +45,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default DataCard;

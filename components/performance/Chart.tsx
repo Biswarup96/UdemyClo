@@ -9,6 +9,13 @@ import {
   Tooltip,
 } from "recharts";
 import { Card } from "@/components/ui/card";
+type ChartProps = {
+  data: {
+    name: string;
+    total: number;
+    count: number;
+  }[];
+};
 
 const data = [
   { name: "Course A", total: 120 },
@@ -17,7 +24,7 @@ const data = [
   { name: "Course D", total: 150 },
 ];
 
-const Chart = () => {
+const Chart = ( { data }: ChartProps) => {
   return (
     <Card className="p-4">
       <ResponsiveContainer width="100%" height={400}>
