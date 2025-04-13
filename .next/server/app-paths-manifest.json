@@ -1,10 +1,9 @@
 {
   "/(home)/page": "app/(home)/page.js",
-  "/(home)/categories/[categoryId]/page": "app/(home)/categories/[categoryId]/page.js",
-  "/(instructor)/instructor/courses/page": "app/(instructor)/instructor/courses/page.js",
-  "/(auth)/sign-in/[[...sign-in]]/page": "app/(auth)/sign-in/[[...sign-in]]/page.js",
-  "/(course)/courses/[courseId]/overview/page": "app/(course)/courses/[courseId]/overview/page.js",
   "/(instructor)/instructor/create-course/page": "app/(instructor)/instructor/create-course/page.js",
+  "/(course)/courses/[courseId]/overview/page": "app/(course)/courses/[courseId]/overview/page.js",
   "/(course)/courses/[courseId]/sections/[sectionId]/page": "app/(course)/courses/[courseId]/sections/[sectionId]/page.js",
-  "/(home)/learning/page": "app/(home)/learning/page.js"
+  "/(home)/learning/page": "app/(home)/learning/page.js",
+  "/(instructor)/instructor/courses/page": "app/(instructor)/instructor/courses/page.js",
+  "/(home)/categories/[categoryId]/page": "app/(home)/categories/[categoryId]/page.js"
 }

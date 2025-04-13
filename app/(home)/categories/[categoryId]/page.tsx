@@ -3,10 +3,16 @@ import CourseCard from "@/components/courses/CourseCard";
 import Categories from "@/components/custom/Categories";
 import { db } from "@/lib/db";
 
+
+
+
+
+
+
 const CoursesByCategory = async ({
   params,
 }: {
-  params: { categoryId: string };
+  params: { categoryId: string ,className?:string };
 }) => {
   const categories = await db.category.findMany({
     orderBy: {
@@ -25,7 +31,7 @@ const CoursesByCategory = async ({
           <Categories 
             categories={categories} 
             selectedCategory={params.categoryId} 
-            className="bg-white shadow-sm rounded-lg p-1 border border-gray-200"
+            // className="bg-white shadow-sm rounded-lg p-1 border border-gray-200"
           />
         </div>
 
@@ -44,7 +50,7 @@ const CoursesByCategory = async ({
                 <CourseCard 
                   key={course.id} 
                   course={course}
-                  className="hover:transform hover:-translate-y-1 transition-all duration-200"
+                  // className="hover:transform hover:-translate-y-1 transition-all duration-200"
                 />
               ))}
             </div>

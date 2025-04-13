@@ -65,7 +65,7 @@ const LearningPage = async () => {
               <CourseCard 
                 key={course.id} 
                 course={course}
-                className="hover:transform hover:-translate-y-1 transition-all duration-200"
+                // className="hover:transform hover:-translate-y-1 transition-all duration-200"
               />
             ))}
           </div>
